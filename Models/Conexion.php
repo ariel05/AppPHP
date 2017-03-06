@@ -1,6 +1,6 @@
-<?php namespace models
+<?php namespace Models;
 
-  class coneccion{
+  class Conexion{
 
     private $datos = array("host" => "localhost", "user" => "root", "pass" => "123456", "db" => "proyecto");
     private $con;
@@ -10,11 +10,11 @@
     }
 
     public function consultaSimple($sql){
-      $this-> con->query($sql);
+      $this->con->query($sql);
     }
 
     public function consultaRetorno($sql){
-      $datos = $this-> con->query($sql);
+      $datos = $this->con->query($sql);
       return $datos;
     }
   }

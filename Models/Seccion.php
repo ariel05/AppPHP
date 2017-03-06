@@ -1,4 +1,5 @@
 <?php namespace Models;
+
     class Seccion{
       private $id;
       private $nombre;
@@ -43,6 +44,5 @@
         $row = mysqli_fetch_assoc($datos);
         return $row;
       }
-
     }
  ?>
